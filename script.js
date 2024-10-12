@@ -23,11 +23,15 @@ console.log("Console will be cleared in 3 seconds.");
 setTimeout(console.clear, 3000);
 
 clicks = Number(localStorage.getItem("clicks"));
-if (cpc == 0) {
+if (cpc !== 0) {
+  cpc = Number(localStorage.getItem("cpc"));
+} else {
   cpc = 1
   localStorage.setItem("cpc", "1")
   updDisplay()
-} else {
-  cpc = Number(localStorage.getItem("cpc"));
 }
 updDisplay();
+
+cpc = 1
+  localStorage.setItem("cpc", "1")
+  updDisplay()
