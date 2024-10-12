@@ -27,6 +27,7 @@ if (cpc == 0) {
   cpc = 1
   localStorage.setItem("cpc", "1")
   updDisplay()
+} else {
+  cpc = Number(localStorage.getItem("cpc"));
 }
-cpc = Number(localStorage.getItem("cpc"));
 updDisplay();
