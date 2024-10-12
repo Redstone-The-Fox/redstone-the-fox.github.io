@@ -1,0 +1,10 @@
+{
+    "configurations": [
+        {
+            "name": "Open in Firefox",
+            "type": "command",
+            "program": "firefox",
+            "args": ["http://192.168.56.1:8080/"]
+        }
+    ]
+}
