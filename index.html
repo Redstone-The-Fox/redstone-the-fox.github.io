@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foxcalc-web</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <h1 id="calculation">0</h1>
+    <div class="buttons-main">
+        <button id="button1" class="button" onclick="AppendClct('1')">1</button>
+        <button id="button2" class="button" onclick="AppendClct('2')">2</button>
+        <button id="button3" class="button" onclick="AppendClct('3')">3</button>
+        <button id="buttonAC" class="button" onclick="ClearClct()">AC</button>
+        <br><br>
+        <button id="button4" class="button" onclick="AppendClct('4')">4</button>
+        <button id="button5" class="button" onclick="AppendClct('5')">5</button>
+        <button id="button6" class="button" onclick="AppendClct('6')">6</button>
+        <button id="button(" class="button" onclick="AppendClct('(')">(</button>
+        <br><br>
+        <button id="button7" class="button" onclick="AppendClct('7')">7</button>
+        <button id="button8" class="button" onclick="AppendClct('8')">8</button>
+        <button id="button)" class="button" onclick="AppendClct('9')">9</button>
+        <button id="button0" class="button" onclick="AppendClct(')')">)</button>
+        <br><br>
+        <button id="button+" class="button" onclick="AppendClct(' + ')">+</button>
+        <button id="button0" class="button" onclick="AppendClct('0')">0</button>
+        <button id="button-" class="button" onclick="AppendClct(' - ')">-</button>
+        <button id="buttonSQRT" class="button" onclick="AppendClct('Math.sqrt(')">√</button>
+        <br><br>
+        <button id="button/" class="button" onclick="AppendClct(' / ')">/</button>
+        <button id="button*" class="button" onclick="AppendClct(' * ')">*</button>
+        <button id="button=" class="button" onclick="Calculate()">=</button>
+        <button id="button^" class="button" onclick="AppendClct(' ** ')">^</button>
+    </div>
+</body>
+</html>
